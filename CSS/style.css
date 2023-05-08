@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: rgb(245, 245, 245);
+}
+
+.container{
+    position: relative;
+    max-width: 480px;
+    width: 100%;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 85px auto 0;
+    background-color: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+}
+
+h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: purple;
+    height: 50px;
+    color: white;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.input-field{
+    position: relative;
+}
+#todo-item{
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    outline: none;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 10px 45px 10px 15px;
+    border: none;
+    border: 1px solid lightgrey;
+    border-radius: 8px;
+    text-transform: capitalize;
+}
+#todo-item:focus{
+    background-color: rgb(245, 245, 245);
+}
+.add-button{
+    position: absolute;
+    right: 5px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: none;
+    color: black;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.add-button:hover{
+    transform: scale(1.5);
+}
+
+.todo-box{
+    height: 200px;
+    margin: 10px 0 2px 0;
+}
+
+.container .todo-lists{
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.todo-lists .list{
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px 25px 5px 5px;
+    font-size: large;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    text-transform: capitalize;
+}
+.todo-lists .list:hover{
+    background-color: plum;
+}
+i {
+    cursor: pointer;
+}
+
+i:hover{
+    transform: scale(1.7);
+}
+
+.pending-tasks{
+    margin-top: 10px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pending-tasks .clear-button{
+    padding: 6px 12px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    background: purple;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.clear-button:hover{
+    opacity: 1;
+}
+
+.list input:checked ~ .task {
+    color: lightgray;
+}
+
+.pending-tasks span {
+    color: black;
+}
