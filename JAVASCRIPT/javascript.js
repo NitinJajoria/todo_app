@@ -1,4 +1,4 @@
-// 
+// Getting all required Elements
 const todoItem = document.querySelector('#todo-item');
 const addBtn = document.querySelector('.add-button');
 const todoLists = document.querySelector('.todo-lists');

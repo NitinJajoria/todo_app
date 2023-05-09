@@ -22,6 +22,7 @@ body{
     flex-direction: column;
 }
 
+/* Heading of App - Todo App  */
 h2{
     display: flex;
     align-items: center;
@@ -33,6 +34,7 @@ h2{
     border-radius: 8px;
 }
 
+/* Text Area of Todo App where we write new task */
 .input-field{
     position: relative;
 }
@@ -52,6 +54,7 @@ h2{
 #todo-item:focus{
     background-color: rgb(245, 245, 245);
 }
+/* CSS for Add Button */
 .add-button{
     position: absolute;
     right: 5px;
@@ -68,16 +71,15 @@ h2{
     transform: scale(1.5);
 }
 
+/* Space where Tasks save */
 .todo-box{
     height: 200px;
     margin: 10px 0 2px 0;
 }
-
 .container .todo-lists{
     max-height: 200px;
     overflow-y: auto;
 }
-
 .todo-lists .list{
     margin-top: 10px;
     background-color: white;
@@ -95,11 +97,11 @@ h2{
 i {
     cursor: pointer;
 }
-
 i:hover{
     transform: scale(1.7);
 }
 
+/* CSS for Task Counter */
 .pending-tasks{
     margin-top: 10px;
     padding: 5px;
@@ -107,7 +109,11 @@ i:hover{
     align-items: center;
     justify-content: space-between;
 }
+.pending-tasks span {
+    color: black;
+}
 
+/* CSS for Clear Button to remove all saved task */
 .pending-tasks .clear-button{
     padding: 6px 12px;
     outline: none;
@@ -119,15 +125,13 @@ i:hover{
     cursor: pointer;
     opacity: 0.5;
 }
-
 .clear-button:hover{
     opacity: 1;
 }
 
+/* CSS for task to change the status of any task */
 .list input:checked ~ .task {
-    color: lightgray;
+    color: gray;
+    text-decoration: line-through;
 }
 
-.pending-tasks span {
-    color: black;
-}
